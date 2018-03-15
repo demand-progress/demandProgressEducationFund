@@ -1,3 +1,7 @@
+* {
+    font-family: sans-serif;
+}
+
 #header-outer[data-using-secondary="1"] {
     top: 0px;
 }
