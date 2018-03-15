@@ -1,3 +1,4 @@
+
 * {
     font-family: sans-serif;
 }
@@ -6,4 +7,11 @@
     top: 0px;
 }
 
-strong { font-weight: bold; }
+strong { font-weight: bold; 
+}
+
+.container-wrap, .project-title {
+    padding-bottom: 0;
+    /* must change to zero only on mobile */
+        /* padding-top: 93px; */
+}
