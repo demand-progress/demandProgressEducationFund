@@ -15,3 +15,7 @@ strong { font-weight: bold;
     /* must change to zero only on mobile */
         /* padding-top: 93px; */
 }
+
+body a {
+    color: #9f1719;
+}
