@@ -18,12 +18,45 @@ body a {
     color: #9f1719;
 }
 
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3) {
+
+/* Portrait and Landscape */
+
+@media only screen 
+  and (min-device-width: 200px) 
+  and (max-device-width: 1024px) {
     .container-wrap, .project-title {
         padding-top: 0;
     }
 
+    .headerLogo {
+        display: flex; 
+        height: 35px;
+        justify-content: center; 
+    }
 }
+
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+/* @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .container-wrap, .project-title {
+        padding-top: 0;
+    }
+} */
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .container-wrap, .project-title {
+        padding-top: 65px;
+    }
+    #headerLogo{
+        height: 45px;
+    }
+}
+
