@@ -12,10 +12,18 @@ strong { font-weight: bold;
 
 .container-wrap, .project-title {
     padding-bottom: 0;
-    /* must change to zero only on mobile */
-        /* padding-top: 93px; */
 }
 
 body a {
     color: #9f1719;
+}
+
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .container-wrap, .project-title {
+        padding-top: 0;
+    }
+
 }
