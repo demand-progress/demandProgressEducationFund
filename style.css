@@ -1,6 +1,6 @@
 body {
     max-width: 100%;
- 
+    background-color: #f5f5f5;
     position: relative;
     margin: 0;
     line-height: 27px;
@@ -82,7 +82,7 @@ img {
         max-width: 70%;
       }
       
-      .container, .headerLogo {
+    .container, .headerLogo {
         left:0;
         top:0;
         width: auto;     
@@ -97,13 +97,12 @@ img {
         padding: 10px 8px 0 8px;
     }
 
-    .about_wrapper, .sisterOrg {
-        margin-top: 0;
-        background-color: #f5f5f5;
+    .about_wrapper {
+        margin-top: -20px;
     }
     
     .sisterOrg {
-        margin-bottom: 0;
+        padding: 0 10px 0 10px;
     }
-
+    
 }
