@@ -6,15 +6,11 @@ body {
     line-height: 27px;
     font-weight: normal;
     color: #676767;
-    font-family: 'Source Serif Pro';
+    font-family: 'Source Serif Pro', serif;
 }
 
 body a {
     color: #9f1719;
-}
-
-strong {
-    font-weight: bold;
 }
 
 .wrapper {
