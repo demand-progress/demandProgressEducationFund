@@ -6,6 +6,7 @@ body {
     line-height: 27px;
     font-weight: normal;
     color: #676767;
+    font-family: 'Source Serif Pro';
 }
 
 body a {
@@ -14,13 +15,11 @@ body a {
 
 strong {
     font-weight: bold;
-    font-family: 'Source Serif Pro';
 }
 
 .wrapper {
   position: relative;
   max-width: 100%; 
-  /* margin: 0 132px 0 132px; */
 }
 
 .container {
@@ -41,33 +40,35 @@ strong {
 
 img {
     max-width: 100%;
-  }
+}
 
-  .content {
-      position: relative;
-  }
+.content {
+    position: relative;
+}
 
-  .about_wrapper, .mission_wrapper {
-      margin: 0;
-      border: 0; 
-      display: block;
-      margin-top: 70px;
-      background-color: #fbfbfb;
-      width: auto;
-  }
+.about_wrapper, .mission_wrapper {
+    margin: 0;
+    border: 0; 
+    display: block;
+    margin-top: 70px;
+    background-color: #fbfbfb;
+    width: auto;
+}
 
-  .about_wrapper, .sisterOrg {
-    margin-top: 0;
-    background-color: #f5f5f5
-  }
+.about_wrapper, .sisterOrg {
+margin-top: 0;
+background-color: #f5f5f5
+}
 
-  .sisterOrg {
-      margin-bottom: 0;
-  }
+.sisterOrg {
+    margin-bottom: 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
 
-  .about_content, .mission_content {
-      padding: 50px 132px 50px 132px;
-  }
+.about_content, .mission_content {
+    padding: 50px 132px 50px 132px;
+}
 
 .footer {
     color: #ccc;
@@ -77,6 +78,21 @@ img {
     height: 45px;
     width: auto;
 }
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+}
+
 @media only screen and (max-width: 736px) {
     img {
         max-width: 70%;
