@@ -91,6 +91,18 @@ p {
     font-size: 16px;
 }
 
+.about_content span {
+    display: list-item;                                                    
+    list-style-type: disc;       
+    list-style-position: inside;
+    padding-left: 10px;
+}
+
+.about_list li {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
 @media only screen and (max-width: 736px) {
     img {
         max-width: 70%;
