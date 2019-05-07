@@ -44,7 +44,7 @@ img {
     position: relative;
 }
 
-.about_wrapper, .mission_wrapper {
+.about_wrapper, .mission_wrapper, .team_wrapper {
     margin: 0;
     border: 0; 
     display: block;
@@ -64,7 +64,7 @@ background-color: #f5f5f5
     padding-bottom: 10px;
 }
 
-.about_content, .mission_content {
+.about_content, .mission_content, .team_content {
     padding: 50px 132px 50px 132px;
 }
 
@@ -103,6 +103,37 @@ p {
     list-style-position: inside;
 }
 
+.masonry {
+    column-count: 3;
+    column-gap: 8%;
+}
+
+.team_member {
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+}
+
+.team_member > img {
+    width: 100%;
+}
+
+.team_member > h4 {
+    margin: 15px 0 0 0;
+}
+
+.team_member > .position {
+    font-size: 15px;
+}
+
+.team_member > .description {
+    padding: 15px 0;
+    margin: 15px 0;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    min-height: 300px;
+}
+
 @media only screen and (max-width: 736px) {
     img {
         max-width: 70%;
@@ -119,8 +150,12 @@ p {
         padding: 0;
     }
 
-    .about_content, .mission_content {
+    .about_content, .mission_content, .team_content {
         padding: 10px 8px 0 8px;
+    }
+    
+    .masonry {
+        column-gap: 1em;
     }
 
     .about_wrapper {
@@ -131,4 +166,10 @@ p {
         padding: 0 10px 0 10px;
     }
     
+}
+
+@media only screen and (max-width: 1024px) {
+  .masonry {
+    column-count: 2;
+  }
 }
