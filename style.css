@@ -25,19 +25,21 @@ body a {
     background-color: white; 
 }
 
-.headerLogo {
+nav {
     left:0;
     top:0;
-    padding: 0 10px;
+    padding: 0 7% 0 7%;
     position: fixed;
     z-index: 1;
-    width: 100%;
+    width: 86%;
+    background-color: white; 
+    display: grid;
+    grid-template-columns: 90% 10%;
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.links {
+    line-height: 4em;
+    text-align: right;
 }
 
 .content {
