@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Main from "./Main"
+import Team from "./Team"
 import { Switch, Route, Link} from "react-router-dom"
 
 const App = () => {
@@ -8,19 +9,20 @@ const App = () => {
     <div className="App">
       <div class="wrapper">
         <nav>
-          <a href="./">
+          <Link to="/">
             <img
               class="default-logo dark-version"
               alt="Demand Progress Education Fund"
               src="images/Demand_Progress_education_fund.png"
             />
-          </a>
+          </Link>
           <div class="links">
             <Link to="./team">Our Team</Link>
           </div>
         </nav>
       </div>
       <Switch>
+        <Route path="/team" component={Team} />
         <Route path="/" component={Main} />
       </Switch>
       <p class="sisterOrg">
