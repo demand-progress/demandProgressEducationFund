@@ -1,9 +1,32 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Main from "./Main"
+import { Switch, Route, Link} from "react-router-dom"
 
-function App() {
+const App = () => {
   return (
     <div className="App">
+      <div class="wrapper">
+        <nav>
+          <a href="./">
+            <img
+              class="default-logo dark-version"
+              alt="Demand Progress Education Fund"
+              src="images/Demand_Progress_education_fund.png"
+            />
+          </a>
+          <div class="links">
+            <Link to="./team">Our Team</Link>
+          </div>
+        </nav>
+      </div>
+      <Switch>
+        <Route path="/" component={Main} />
+      </Switch>
+      <p class="sisterOrg">
+        Our sister 501(c)4 organization is Demand Progress.
+      </p>
+      <div class="footer" />
     </div>
   );
 }
