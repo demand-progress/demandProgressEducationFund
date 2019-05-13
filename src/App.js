@@ -17,14 +17,14 @@ class App extends Component {
       "https://6iz2t3g6ka.execute-api.us-east-1.amazonaws.com/dev/?page_id=2739"
     )
       .then(res => res.json())
-      .then(({ meta, objects }) => {
-        let page = objects[0];
+      .then((page) => {
         if (page) {
           this.setState({
             main_header: page.statement_leadin,
             about_us: page.statement_text,
             focus_areas: page.about_text,
-            outgoing_efforts: page.thank_you_text
+            outgoing_efforts: page.thank_you_text,
+            page_fields: page.page_fields
           });
         }
       });
@@ -32,6 +32,10 @@ class App extends Component {
 
   renderMain = () => {
     return <Main {...this.state} />;
+  };
+
+  renderTeam = () => {
+    return <Team {...this.state.page_fields} />;
   };
 
   render() {
@@ -52,7 +56,7 @@ class App extends Component {
           </nav>
         </div>
         <Switch>
-          <Route path="/team" component={Team} />
+          <Route path="/team" render={this.renderTeam} />
           <Route path="/" render={this.renderMain} />
         </Switch>
         <p className="sisterOrg">
