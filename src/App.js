@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Main from "./Main";
 import Team from "./Team";
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route, Link, withRouter } from "react-router-dom";
 
 class App extends Component {
   state = {
@@ -56,8 +56,8 @@ class App extends Component {
           </nav>
         </div>
         <Switch>
-          <Route path="/team" render={this.renderTeam} />
-          <Route path="/" render={this.renderMain} />
+          <Route path={`${this.props.match.path}team`} render={this.renderTeam} />
+          <Route path={`${this.props.match.path}`} render={this.renderMain} />
         </Switch>
         <p className="sisterOrg">
           Our sister 501(c)4 organization is Demand Progress.
@@ -67,4 +67,4 @@ class App extends Component {
     );
   }
 }
-export default App;
+export default withRouter(App);
