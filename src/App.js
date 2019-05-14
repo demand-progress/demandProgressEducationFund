@@ -51,7 +51,7 @@ class App extends Component {
               />
             </Link>
             <div className="links">
-              <Link to="./team">Our Team</Link>
+              <Link to="/team">Our Team</Link>
             </div>
           </nav>
         </div>
