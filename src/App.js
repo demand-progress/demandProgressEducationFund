@@ -3,6 +3,8 @@ import "./App.css";
 import Main from "./Main";
 import Team from "./Team";
 import { Switch, Route, Link, withRouter } from "react-router-dom";
+import { Navbar, Nav } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 
 class App extends Component {
   state = {
@@ -41,20 +43,27 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="wrapper">
-          <nav>
-            <Link to="/">
-              <img
-                className="default-logo dark-version"
-                alt="Demand Progress Education Fund"
-                src="images/Demand_Progress_education_fund.png"
-              />
-            </Link>
-            <div className="links">
-              <Link to="/team">Our Team</Link>
-            </div>
-          </nav>
-        </div>
+        {/* <div className="wrapper"> */}
+          <Navbar bg="light" expand="lg">
+            <LinkContainer to="/">
+              <Navbar.Brand>
+                <img
+                  className="default-logo dark-version"
+                  alt="Demand Progress Education Fund"
+                  src="images/Demand_Progress_education_fund.png"
+                />
+              </Navbar.Brand>
+            </LinkContainer>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="ml-auto">
+                <LinkContainer to="/team">
+                  <Link className="dp-link">Our Team</Link>
+                </LinkContainer>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+        {/* </div> */}
         <Switch>
           <Route path="/team" render={this.renderTeam} />
           <Route path="/" render={this.renderMain} />
