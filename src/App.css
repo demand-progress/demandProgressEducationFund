@@ -9,7 +9,7 @@ body {
   font-family: "Source Serif Pro", serif;
 }
 
-.dp-link, .dp-link:hover {
+#root a {
   color: #9f1719;
 }
 
@@ -47,6 +47,10 @@ body {
   line-height: 4em;
   text-align: right;
 } */
+
+#App {
+
+}
 
 .content {
   position: relative;
