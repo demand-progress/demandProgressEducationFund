@@ -13,6 +13,17 @@ body {
   color: #9f1719;
 }
 
+#root .content {
+  /* height: stretch; */
+}
+
+#root .spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+
 .navbar-toggler {
    position: fixed;
    margin-right: 15px;
