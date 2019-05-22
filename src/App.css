@@ -13,6 +13,12 @@ body {
   color: #9f1719;
 }
 
+.navbar-toggler {
+   position: fixed;
+   margin-right: 15px;
+   right: 0;
+}
+
 .wrapper {
   position: relative;
   max-width: 100%;

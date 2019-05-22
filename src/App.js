@@ -43,7 +43,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <div className="wrapper"> */}
           <Navbar bg="light" expand="lg">
             <LinkContainer to="/">
               <Navbar.Brand>
@@ -63,7 +62,6 @@ class App extends Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-        {/* </div> */}
         <Switch>
           <Route path="/team" render={this.renderTeam} />
           <Route path="/" render={this.renderMain} />
