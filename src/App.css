@@ -92,7 +92,7 @@ body {
 .about_content,
 .mission_content,
 .team_content {
-  padding: 50px 132px 50px 132px;
+  padding: 50px 5% 50px 5%;
 }
 
 .footer {
@@ -145,7 +145,7 @@ li {
 }
 
 @media only screen and (max-width: 736px) {
-  img {
+  .default-logo {
     max-width: 70%;
   }
 
@@ -183,5 +183,11 @@ li {
 @media only screen and (max-width: 1024px) {
   .masonry {
     column-count: 2;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .masonry {
+    column-count: unset;
   }
 }
