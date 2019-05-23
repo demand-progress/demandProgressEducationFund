@@ -9,8 +9,25 @@ body {
   font-family: "Source Serif Pro", serif;
 }
 
-body a {
+#root a {
   color: #9f1719;
+}
+
+#root .content {
+  /* height: stretch; */
+}
+
+#root .spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+
+.navbar-toggler {
+   position: fixed;
+   margin-right: 15px;
+   right: 0;
 }
 
 .wrapper {
@@ -25,7 +42,7 @@ body a {
   background-color: white;
 }
 
-nav {
+/* nav {
   left: 0;
   top: 0;
   padding: 0 7% 0 7%;
@@ -35,11 +52,15 @@ nav {
   background-color: white;
   display: grid;
   grid-template-columns: 90% 10%;
-}
+} */
 
-.links {
+/* .links {
   line-height: 4em;
   text-align: right;
+} */
+
+#App {
+
 }
 
 .content {
@@ -52,7 +73,6 @@ nav {
   margin: 0;
   border: 0;
   display: block;
-  margin-top: 70px;
   background-color: #fbfbfb;
   width: auto;
 }
@@ -72,7 +92,7 @@ nav {
 .about_content,
 .mission_content,
 .team_content {
-  padding: 50px 132px 50px 132px;
+  padding: 50px 5% 50px 5%;
 }
 
 .footer {
@@ -125,7 +145,7 @@ li {
 }
 
 @media only screen and (max-width: 736px) {
-  img {
+  .default-logo {
     max-width: 70%;
   }
 
@@ -163,5 +183,11 @@ li {
 @media only screen and (max-width: 1024px) {
   .masonry {
     column-count: 2;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .masonry {
+    column-count: unset;
   }
 }
