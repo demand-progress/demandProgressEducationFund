@@ -16,22 +16,15 @@ class App extends Component {
   };
 
   componentDidMount() {
-    fetch(
-      "https://6iz2t3g6ka.execute-api.us-east-1.amazonaws.com/dev/?page_id=2739"
-    )
+    fetch('http://api.demandprogressaction.org/wp-json/wp/v2/pages/331')
       .then(res => res.json())
       .then((page) => {
         if (page) {
-          this.setState({
-            main_header: page.statement_leadin,
-            about_us: page.statement_text,
-            focus_areas: page.about_text,
-            outgoing_efforts: page.thank_you_text,
-            page_fields: page.page_fields,
-            loading: false
-          });
+          const st8 = page.acf
+          st8.loading = false
+          this.setState(st8)
         }
-      });
+      })
   }
 
   renderMain = () => {
@@ -39,7 +32,7 @@ class App extends Component {
   };
 
   renderTeam = () => {
-    return <Team {...this.state.page_fields} />;
+    return <Team team_section={this.state.team} />;
   };
 
   render() {
