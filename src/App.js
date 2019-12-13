@@ -16,7 +16,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    fetch('http://api.demandprogressaction.org/wp-json/wp/v2/pages/331')
+    fetch('//api.demandprogressaction.org/wp-json/wp/v2/pages/331')
       .then(res => res.json())
       .then((page) => {
         if (page) {
