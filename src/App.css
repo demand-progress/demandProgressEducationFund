@@ -77,6 +77,10 @@ body {
   width: auto;
 }
 
+.focus-areas{
+  margin-top: 50px;
+
+}
 .about_wrapper,
 .sisterOrg {
   margin-top: 0;
@@ -107,6 +111,14 @@ body {
 h1,
 h2 {
   text-align: center;
+}
+h2{
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+h3{
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 li {
