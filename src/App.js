@@ -52,9 +52,9 @@ class App extends Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
-                <LinkContainer to="/team">
+                {/* <LinkContainer to="/team">
                   <Link className="dp-link">Our Team</Link>
-                </LinkContainer>
+                </LinkContainer> */}
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -67,7 +67,7 @@ class App extends Component {
               </div>
             ): (
               <Switch>
-                <Route path="/team" render={this.renderTeam} />
+                {/* <Route path="/team" render={this.renderTeam} /> */}
                 <Route path="/" render={this.renderMain} />
               </Switch>
             )}
